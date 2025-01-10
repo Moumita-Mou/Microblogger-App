@@ -1,0 +1,29 @@
+<div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Author">Author</label>
+    <div class="col-sm-10">
+        <input autofocus class="form-control" name="Author" placeholder= "Type Your Name"  maxlength="100" required value="<%= model.Author %>" />
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Title">Title</label>
+    <div class="col-sm-10">
+        <input autofocus class="form-control" name="Title" placeholder= "Type Article Title" maxlength="100" required value="<%= model.Title %>" />
+    </div>
+</div>
+
+
+<div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Subtitle">Subtitle</label>
+    <div class="col-sm-10">
+        <input autofocus class="form-control" name="Subtitle" placeholder= "Type Article Subtitle" maxlength="100" required value="<%= model.Subtitle %>" />
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Body">Body</label>
+    <div class="col-sm-10">
+        <textarea class="form-control" cols="20" name="Body" placeholder= "Type Your Article Body" maxlength="500" required
+            rows="7"><%= model.Body %></textarea>
+    </div>
+</div>

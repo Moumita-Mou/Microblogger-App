@@ -1,0 +1,21 @@
+<%- include("_header") -%>
+
+<br>
+  <h2>Settings Page</h2>
+<br>
+  <form action="/user/settings/<%= model.ID %>" method="post">
+    <div class="form-horizontal">
+
+      <%- include("_setting-panel") -%>
+
+        <div class="form-group row">
+          <label class="col-form-label col-sm-2"></label>
+          <div class="col-sm-10">
+            <input type="submit" value="Done" class="btn btn-default btn-success" />
+            <a class="btn btn-default btn-warning" href="/user/articles/"> Cancel </a>
+          </div>
+        </div>
+    </div>
+  </form>
+
+  <%- include("_footer") -%>

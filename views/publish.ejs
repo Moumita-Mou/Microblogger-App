@@ -1,0 +1,21 @@
+<%- include("_header") -%>
+
+ <br>
+  <h2>Publishing Page</h2>
+ <br>
+  <form action="/user/publish" method="post">
+    <div class="form-horizontal">
+
+      <%- include("_modification-panel") -%>
+
+        <div class="form-group row">
+          <label class="col-form-label col-sm-2"></label>
+          <div class="col-sm-10">
+            <input type="submit" value="Publish Article" class="btn btn-default btn-success" />
+            <a class="btn btn-default btn-warning" href="/user/articles/"> Cancel </a>
+          </div>
+        </div>
+    </div>
+  </form>
+
+  <%- include("_footer") -%>

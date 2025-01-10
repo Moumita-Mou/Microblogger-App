@@ -1,0 +1,22 @@
+<%- include("_header") -%>
+
+ <br>
+  <h2> Reading Page </h2>
+ <br>
+  <form action="/user/read/<%= model.ID %>" method="post">
+    <div class="form-horizontal">
+
+      <%- include("_show") -%>
+
+        <div class="form-group row">
+          <label class="col-form-label col-sm-2"></label>
+          <div class="col-sm-10">            
+            <a class="btn btn-outline-dark like"> Like <span class="likes"> 0 </span></a>
+            <a class="btn btn-default btn-warning"> Comment </a>
+            <input type="submit" value="Close" class="btn btn-default btn-danger" />
+          </div>
+        </div>
+    </div>
+  </form>
+
+  <%- include("_footer") -%>
