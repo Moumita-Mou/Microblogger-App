@@ -72,3 +72,66 @@ The Microblogger App is fully functional with core features such as user authent
 - **Comments and Likes**: Add the ability to comment on and like posts.
 - **Post Search**: Implement search functionality for finding specific posts.
 - **User Follow System**: Enable users to follow others and see posts from people they follow.
+
+--------------------------------------------------------------
+
+## Using this Project Template
+
+This template sets you off in the right direction for your coursework. To get started:
+
+1. **Run the following command** to create the database:
+
+   ```bash
+   npm run build-db
+   ```
+
+2. **Start the web app**:
+
+   ```bash
+   npm run start
+   ```
+
+3. You can also run:
+
+   ```bash
+   npm run clean-db
+   ```
+
+   This will delete the database and allow you to rebuild it for a fresh start.
+
+## Next Steps
+
+- Explore the file structure and code.
+- Read all the comments in the code.
+- Try accessing each of the routes via the browser to understand what they do.
+- Try creating EJS pages for each route that retrieves and displays the data.
+- Try enhancing the `create-user-record` page to allow users to set custom text in the record.
+- Add new routes and pages to allow users to create their own records.
+
+## Creating Database Tables
+
+- All database tables should be created by modifying the `db_schema.sql`.
+- This allows you to review and recreate your database simply by running `npm run build-db`.
+- **Do not** create or alter database tables through other means.
+
+## Preparing for Submission
+
+If you're submitting the project, follow these steps:
+
+1. **Make a copy of this folder**.
+2. In your copy, **delete the following files and folders**:
+    - `node_modules`
+    - `.git` (the hidden folder with your git repository)
+    - `database.db` (your database)
+
+3. Ensure that your `package.json` file includes all dependencies for your project. **Make sure to use the `--save` tag** when installing any new dependencies.
+
+## Getting Started with the Project
+
+- After setting up the project, make sure to configure any settings in the configuration files.
+- The app will only require you to run the following commands to get it working:
+  - `npm install`
+  - `npm run build-db`
+  - `npm run start`
+- Ensure no additional build scripts or dependencies are required.
+
