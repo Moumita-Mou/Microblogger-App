@@ -1,72 +1,74 @@
-##  Coursework Template ##
-### CM2040 Database Networks and the Web ###
+# Microblogger App
 
-#### Installation requirements ####
+**Microblogger App** is a simple microblogging platform built using **Express.js**. It allows users to create and share short posts in a clean, minimalistic environment. The app uses **SQLite** for managing user data and posts in the backend, and **Bootstrap** for responsive and modern styling.
 
-* NodeJS 
-    - follow the install instructions at https://nodejs.org/en/
-    - we recommend using the latest LTS version
-* Sqlite3 
-    - Windows users: follow instructions here https://www.sqlitetutorial.net/download-install-sqlite/
-    - Mac users: it comes preinstalled
-    - Linux users: use a package manager eg. apt install
+## Features
 
-To install all the node packages run ```npm install``` from the project directory
+- **User Authentication**: Allows users to sign up, log in, and manage their profile.
+- **Post Creation**: Users can create, edit, and delete posts.
+- **Post Feed**: Display recent posts from all users in a clean, easy-to-read feed.
+- **User Profile**: Users can view and update their personal information.
+- **Responsive Design**: A mobile-friendly, responsive UI powered by **Bootstrap**.
 
-#### Help with node SQLite3 ####
+## Installation Requirements
 
-A few aspects SQLite3 work a little differently to mySql but all of the key concepts are the same
+Before running the project, ensure you have the following installed:
 
-Find the API documentation at:
-https://github.com/TryGhost/node-sqlite3/wiki/API
+- **Node.js**:
+  - Follow the install instructions at [Node.js](https://nodejs.org/en/).
+  - It is recommended to use the latest LTS version.
+  
+- **SQLite3**:
+  - **Windows users**: Follow instructions here: [SQLite3 Installation for Windows](https://www.sqlitetutorial.net/download-install-sqlite/).
+  - **Mac users**: SQLite3 comes pre-installed.
+  - **Linux users**: Use a package manager, for example: `apt install sqlite3`.
 
-Find node SQLite tutorials at:
-https://www.sqlitetutorial.net/sqlite-nodejs/
-This also a good resource to find examples and tutorials around SQLite queries
+## Installation
 
+1. Clone the repository:
 
-#### Using this template ####
+   ```bash
+   git clone https://github.com/Moumita-Mou/Microblogger-App.git
+   ```
 
-This template sets you off in the right direction for your coursework. To get started:
+2. Navigate into the project directory:
 
-Run ```npm run build-db``` to create the database (database.db)
-Run ```npm run start``` to start serving the web app (Access via http://localhost:3000)
+   ```bash
+   cd Microblogger-App
+   ```
 
-You can also run: 
-```npm run clean-db``` to delete the database before rebuilding it for a fresh start
+3. Install the required dependencies:
 
-##### Next steps #####
+   ```bash
+   npm install
+   ```
 
-* Explore the file structure and code
-* Read all the comments
-* Try accessing each of the routes via the browser - make sure you understand what they do
-* Try creating ejs pages for each of the routes that retrieve and display the data
-* Try enhancing the ```create-user-record``` page so that you can set the text in the record 
-* Try adding new routes and pages to let the user create their own records
+4. Run the following command to build the database:
 
-##### Creating database tables #####
+   ```bash
+   npm run build-db
+   ```
 
-* All database tables should created by modifying the db_schema.sql 
-* This allows us to review and recreate your database simply by running ```npm run build-db```
-* Do NOT create or alter database tables through other means
+5. To start the application, use the following command:
 
+   ```bash
+   npm run start
+   ```
 
-#### Preparing for submission ####
+6. Open your browser and navigate to `http://localhost:3000` to use the app.
 
-Make a copy of this folder
-In your copy, delete the following files and folders:
-    * node_modules
-    * .git (the hidden folder with your git repository)
-    * database.db (your database)
+## Help with Node.js SQLite3
 
-Make sure that your package.json file includes all of the dependencies for your project NB. you need to use the ```--save``` tag each time you use npm to install a dependency
+SQLite3 works a little differently compared to MySQL, but the key concepts are the same. Here are a few helpful resources:
 
-#### Getting started with my project ####
-
-Edit this section to include any settings that should be adjusted in configuration files and concise instructions for how to access the reader and author pages once the app is running.
-
-NB. we will ONLY run ```npm install```, ```npm run build-db```, and ```npm run start``` . We will NOT install additional packages to run your code and will NOT run additional build scripts. Be careful with any additional node dependencies that you use.
+- [SQLite3 API Documentation](https://github.com/TryGhost/node-sqlite3/wiki/API)
+- [SQLite Tutorials for Node.js](https://www.sqlitetutorial.net/sqlite-nodejs/)
 
 
+## Current Status
 
+The Microblogger App is fully functional with core features such as user authentication, post creation, and profile management. Future enhancements could include:
 
+- **Comments and Likes**: Add the ability to comment on and like posts.
+- **Post Search**: Implement search functionality for finding specific posts.
+- **User Follow System**: Enable users to follow others and see posts from people they follow.
