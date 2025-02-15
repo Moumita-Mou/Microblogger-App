@@ -75,9 +75,12 @@ The Microblogger App is fully functional with core features such as user authent
 
 --------------------------------------------------------------
 
-## Using this Project Template
 
-This template sets you off in the right direction for your coursework. To get started:
+
+# Using this Project Template for creating your own version of the App:
+
+## Initial Step
+Do as follows:
 
 1. **Run the following command** to create the database:
 
@@ -113,18 +116,8 @@ This template sets you off in the right direction for your coursework. To get st
 - All database tables should be created by modifying the `db_schema.sql`.
 - This allows you to review and recreate your database simply by running `npm run build-db`.
 - **Do not** create or alter database tables through other means.
-
-## Preparing for Submission
-
-If you're submitting the project, follow these steps:
-
-1. **Make a copy of this folder**.
-2. In your copy, **delete the following files and folders**:
-    - `node_modules`
-    - `.git` (the hidden folder with your git repository)
-    - `database.db` (your database)
-
-3. Ensure that your `package.json` file includes all dependencies for your project. **Make sure to use the `--save` tag** when installing any new dependencies.
+  
+Ensure that your `package.json` file includes all dependencies for your project. **Make sure to use the `--save` tag** when installing any new dependencies.
 
 ## Getting Started with the Project
 
